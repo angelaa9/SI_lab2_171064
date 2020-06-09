@@ -2,3 +2,14 @@
 ## Ангела Шуменковски, бр. на индекс 171064
 ### Група на код:
 Ја добив групата на код 5
+
+### Control Flow Graph
+![labangela](https://user-images.githubusercontent.com/62511348/84204459-883c3c80-aaab-11ea-9365-897f5c853a30.jpg)
+
+### Цикломатска комплексност
+
+### Тест случаи според критериумот Every Branch Test
+
+### Тест случаи според критериумот Multiple Conditions Test 
+
+### Објаснување на напишаните unit tests
