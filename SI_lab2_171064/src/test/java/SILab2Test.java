@@ -31,14 +31,14 @@ public class SILab2Test {
         //F && X 
         //T && F
 
-	    assertEquals("0,0,1", SILab2.function(createList("0,0,0,#")));
+	assertEquals("0,0,1", SILab2.function(createList("0,0,0,#")));
         assertEquals("0,0,1", SILab2.function(createList("0,0,0,#")));
 
         //if (i + 1 < list.size() && list.get(i + 1).equals("#")) { //12
         //F && X
         //T && F
 
-	    assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
+	assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
         assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
     }
 }
