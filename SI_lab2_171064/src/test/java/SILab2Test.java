@@ -28,24 +28,17 @@ public class SILab2Test {
     @Test
     void multipleConditionsTest() {
         //if (i - 1 >= 0 && list.get(i - 1).equals("#")) { //9
-        //F && X
+        //F && X 
         //T && F
 
-        IllegalArgumentException ex;
-        ex = assertThrows(IllegalArgumentException.class,
-                () -> SILab2.function(null));
-        assertTrue(ex.getMessage().contains("List length should be greater than 0"));
-
+	    assertEquals("0,0,1", SILab2.function(createList("0,0,0,#")));
         assertEquals("0,0,1", SILab2.function(createList("0,0,0,#")));
 
         //if (i + 1 < list.size() && list.get(i + 1).equals("#")) { //12
         //F && X
         //T && F
 
-        ex = assertThrows(IllegalArgumentException.class,
-                () -> SILab2.function(null));
-        assertTrue(ex.getMessage().contains("List length should be greater than 0"));
-
+	    assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
         assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
     }
 }
