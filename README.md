@@ -11,6 +11,11 @@
 Цикломатската комплексност ја одредуваме така што ги броиме регионите во графот. Може да заклучиме дека цикломатската комплексност е 5 и имаме толку независни патеки.
 
 ### Тест случаи според критериумот Every Branch Test
+    
+    public class SILab2Test {
+    private List<String> createList(String... list) {
+        return new ArrayList<>(Arrays.asList(list));
+    }
     @Test
     void EveryBranchTest() {
         IllegalArgumentException ex;
@@ -20,9 +25,15 @@
 
         assertEquals("#, #, #, #, #", SILab2.function(createList("#, #, #, #, #")));
         assertEquals("#, 2, #, 2, #", SILab2.function(createList("#, 0, #, 0, #")));
-
     }
+    }
+    
 ### Тест случаи според критериумот Multiple Conditions Test 
+    
+    public class SILab2Test {
+    private List<String> createList(String... list) {
+        return new ArrayList<>(Arrays.asList(list));
+    }
     @Test
     void multipleConditionsTest() {
     //if (i - 1 >= 0 && list.get(i - 1).equals("#")) { //9
@@ -38,7 +49,9 @@
 
 	assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
     assertEquals("1,0,0", SILab2.function(createList("#,0,0,0")));
-    }   
+    }  
+    }
+    
 ### Објаснување на напишаните unit tests
 
 #### Објаснување на тестовите од EveryBranchTest:
